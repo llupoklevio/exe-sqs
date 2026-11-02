@@ -1,0 +1,11 @@
+{
+  "name": "esercizio1",
+  "description": "Infra: uno script crea la coda e la DLQ, è rilanciabile (stesso nome e attributi restituisce la coda esistente), con SSE attivo e retention della DLQ più lunga della sorgente",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "private": true,
+  "author": {
+    "email": "llupoklevi@gmail.com",
+    "name": "Llupo Klevio"
+  }
+}

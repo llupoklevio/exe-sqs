@@ -1,0 +1,22 @@
+{
+  "name": "exe-sqs",
+  "version": "1.0.0",
+  "description": "Exercise for SQS",
+  "workspaces": [],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-klupo:llupoklevio/exe-sqs.git"
+  },
+  "types": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

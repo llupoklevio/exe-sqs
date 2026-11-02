@@ -1,0 +1,26 @@
+services:
+  moto:
+    image: motoserver/moto
+    ports: [5001:5000]
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:5000/moto-api/')",
+        ]
+      interval: 2s
+      retries: 15
+  esercizi:
+    build:
+      context: "."
+      target: run
+    environment:
+      AWS_ENDPOINT_URL: http://moto:5000
+      AWS_REGION: eu-south-1
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+    depends_on:
+      moto:
+        condition: service_healthy
