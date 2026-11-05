@@ -2,9 +2,13 @@
   "name": "exe-sqs",
   "version": "1.0.0",
   "description": "Exercise for SQS",
-  "workspaces": [],
+  "workspaces": [
+    "./esercizio1",
+    "./cli"
+  ],
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "cli": "node cli/dist/main.js"
   },
   "repository": {
     "type": "git",

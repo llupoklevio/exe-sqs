@@ -1,5 +1,5 @@
 {
-  "name": "esercizio1",
+  "name": "@exe-sqs/esercizio1",
   "description": "Infra: uno script crea la coda e la DLQ, è rilanciabile (stesso nome e attributi restituisce la coda esistente), con SSE attivo e retention della DLQ più lunga della sorgente",
   "version": "1.0.0",
   "type": "commonjs",
@@ -7,5 +7,10 @@
   "author": {
     "email": "llupoklevi@gmail.com",
     "name": "Llupo Klevio"
+  },
+  "main": "./dist/main.js",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.1161.0",
+    "dotenv": "^18.0.9"
   }
 }

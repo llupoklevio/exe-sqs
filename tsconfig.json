@@ -3,6 +3,9 @@
   "references": [
     {
       "path": "./esercizio1"
+    },
+    {
+      "path": "./cli"
     }
   ]
 }

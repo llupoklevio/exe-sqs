@@ -1,0 +1,16 @@
+{
+  "name": "@exercise/cli",
+  "version": "1.0.0",
+  "description": "cli to test exercise",
+  "main": "dist/main.js",
+  "private": true,
+  "type": "commonjs",
+  "author": {
+    "email": "llupoklevi@gmail.com",
+    "name": "Llupo Klevio"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "@exe-sqs/esercizio1": "*"
+  }
+}
